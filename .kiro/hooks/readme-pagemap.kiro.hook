@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Update README page map",
+  "description": "Keep the README page map in sync with the page registry.",
+  "version": "1",
+  "when": { "type": "fileEdited", "patterns": ["src/pages/index.ts"] },
+  "then": { "type": "askAgent", "prompt": "The page registry changed. Regenerate the 'Page map' table in README.md from src/pages/index.ts (number, EN title, AR title)." }
+}

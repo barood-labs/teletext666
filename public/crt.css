@@ -1,0 +1,9 @@
+html,body{margin:0;background:#050505;color:#ddd;font-family:ui-monospace,"DejaVu Sans Mono",monospace}
+.tv{position:relative;width:min(96vw,760px);margin:4vh auto 1rem;padding:24px;background:#000;border-radius:28px;box-shadow:0 0 0 14px #1b1b1b,0 0 60px rgba(80,255,160,.15) inset}
+.tv:after{content:"";position:absolute;inset:0;border-radius:28px;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.35) 0 1px,transparent 1px 3px)}
+.screen{margin:0;font-size:min(3.6vw,26px);line-height:1.15;text-shadow:0 0 6px currentColor}
+.row{width:40ch;white-space:pre;overflow:hidden}.row[dir=rtl]{text-align:right}
+.hidden{display:none}.counter{position:absolute;top:8px;right:28px;color:#0f0;font-size:14px}
+.black{color:#000}.red{color:#ff3b3b}.green{color:#3bff6b}.yellow{color:#ffe83b}.blue{color:#3b6bff}.magenta{color:#ff3bff}.cyan{color:#3bffff}.white{color:#fff}
+.help{text-align:center;color:#777;font-size:13px}.help a{color:#3bffff}
+body.haunted .screen{animation:flick .12s infinite alternate}@keyframes flick{to{opacity:.85;filter:blur(.4px)}}

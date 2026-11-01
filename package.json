@@ -1,0 +1,9 @@
+{
+  "name": "teletext666",
+  "version": "0.1.0",
+  "description": "Teletext/Ceefax resurrected: tiny 40x24 bilingual (EN/AR) pages for slow networks. Web, curl and SMS.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.18" },
+  "scripts": { "start": "node src/server.ts", "test": "node --test test/*.test.ts", "check": "node src/cli.ts check", "page": "node src/cli.ts" }
+}

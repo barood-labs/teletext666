@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Validate teletext grid on page save",
+  "description": "When a page file is saved, render it and check the 40x24 grid limits.",
+  "version": "1",
+  "when": { "type": "fileEdited", "patterns": ["src/pages/*.ts", "src/grid.ts"] },
+  "then": { "type": "askAgent", "prompt": "A teletext page or the grid was edited. Run `npm test` and `node src/cli.ts check`. If any page exceeds 40 columns or 24 rows, or a word is cut mid-word, fix the page source (not the test) following .kiro/steering/teletext-rules.md and bilingual.md." }
+}

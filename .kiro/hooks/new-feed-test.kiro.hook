@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Scaffold test + fixture for new feed",
+  "description": "When a new feed adapter is created, generate a fixture and an offline test.",
+  "version": "1",
+  "when": { "type": "fileCreated", "patterns": ["src/feeds/*.ts"] },
+  "then": { "type": "askAgent", "prompt": "A new feed adapter was created. Add a JSON fixture under test/fixtures/ and a test in test/feeds.test.ts that renders the page from the fixture with no network, and asserts the fallback page renders when fetch throws." }
+}
