@@ -23,6 +23,7 @@ npm run page -- 400 ar
 |---|---|---|
 | 100 | Index | الفهرس |
 | 101 | About | عن الخدمة |
+| 200 | News (BBC World / BBC Arabic RSS, Page Editor) | الأخبار |
 | 300 | Weather (Open-Meteo) | الطقس |
 | 400 | Prayer times (Aladhan) | مواقيت الصلاة |
 | 666 | Graveyard | المقبرة |

@@ -1,5 +1,7 @@
-import type { Lang, PageSource } from '../grid.ts';
+import { BODY, type Lang, type PageSource } from '../grid.ts';
 import { cachedFetch, city } from '../feeds/fetch.ts';
+import { fetchNews } from '../feeds/news.ts';
+import { compressFeed } from '../feeds/compress.ts';
 
 const offAir = (num: number, lang: Lang, src: string): PageSource => ({ num, lang, title: lang === 'ar' ? 'خارج البث' : 'OFF AIR',
   lines: lang === 'ar' ? ['{r}المصدر غير متاح الآن', `{w}${src}`, '', '{w}حاول لاحقاً.'] : ['{r}SOURCE OFF AIR', `{w}${src} is not responding.`, '', '{w}Try again shortly.'] });
@@ -42,4 +44,21 @@ export async function quakes(lang: Lang): Promise<PageSource> {
       lang === 'ar' ? '{r}زلازل 4.5+ آخر 24 ساعة (UTC)' : '{r}QUAKES M4.5+ LAST 24H (UTC)', '',
       ...(fs.length ? fs : [lang === 'ar' ? '{g}لا توجد زلازل كبيرة' : '{g}No major quakes.']), '', lang === 'ar' ? '{w}المصدر: USGS' : '{w}Source: USGS'] };
   } catch { return offAir(888, lang, 'USGS'); }
+}
+
+export async function news(lang: Lang, q: URLSearchParams): Promise<PageSource> {
+  try {
+    const { items, source } = await fetchNews(lang);
+    // fixed rows = subtitle + blank + blank + source = 4; the rest is headlines
+    const heads = compressFeed(items, lang, BODY - 4);
+    const body = heads.length
+      ? heads.map((h) => `{w}${h}`)
+      : [lang === 'ar' ? '{g}لا توجد عناوين.' : '{g}No headlines.'];
+    return lang === 'ar'
+      ? { num: 200, lang, title: 'الأخبار', lines: ['{y}أخبار بي بي سي', '', ...body, '', `{w}المصدر: ${source}`] }
+      : { num: 200, lang, title: 'NEWS', lines: ['{y}BBC WORLD NEWS', '', ...body, '', `{w}Source: ${source}`] };
+  } catch {
+    // R19: fetch failed with no cache -> OFF AIR naming the source
+    return offAir(200, lang, lang === 'ar' ? 'BBC Arabic' : 'BBC World');
+  }
 }

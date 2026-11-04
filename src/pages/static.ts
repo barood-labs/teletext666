@@ -2,11 +2,11 @@ import type { Lang, PageSource } from '../grid.ts';
 export function index(lang: Lang): PageSource {
   return lang === 'ar' ? { num: 100, lang, title: 'الفهرس', lines: [
     '{y}تيليتكست 666', '{w}عاد من القبر. صفحات صغيرة، معلومات كبيرة.', '',
-    '{g}300 {w}الطقس', '{y}400 {w}مواقيت الصلاة', '{c}888 {w}تنبيهات الزلازل', '{m}101 {w}عن الخدمة', '{r}666 {w}؟؟؟', '',
+    '{b}200 {w}الأخبار', '{g}300 {w}الطقس', '{y}400 {w}مواقيت الصلاة', '{c}888 {w}تنبيهات الزلازل', '{m}101 {w}عن الخدمة', '{r}666 {w}؟؟؟', '',
     '{w}كل صفحة أقل من 1 كيلوبايت.', '{w}تعمل على شبكات 2G والرسائل القصيرة.', '', '{c}اكتب رقم الصفحة: 300 أو 400',
   ] } : { num: 100, lang, title: 'INDEX', lines: [
     '{y}TELETEXT 666', '{w}Risen from the grave. Tiny pages, vital info.', '',
-    '{g}300 {w}Weather', '{y}400 {w}Prayer times', '{c}888 {w}Earthquake alerts', '{m}101 {w}About this service', '{r}666 {w}???', '',
+    '{b}200 {w}News', '{g}300 {w}Weather', '{y}400 {w}Prayer times', '{c}888 {w}Earthquake alerts', '{m}101 {w}About this service', '{r}666 {w}???', '',
     '{w}Every page is under 1 KB.', '{w}Works on 2G, SMS and curl.', '', '{c}Add ?city=boise|london|amman|cairo|gaza|beirut',
   ] };
 }

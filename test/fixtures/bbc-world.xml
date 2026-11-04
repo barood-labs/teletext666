@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>BBC News - World</title>
+    <link>https://www.bbc.co.uk/news/world</link>
+    <description>The latest stories from the World section of the BBC.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 03 Nov 2026 10:00:00 GMT</lastBuildDate>
+    <item>
+      <title>M5.8 quake strikes coast of Turkiye, magnitude revised to 5.8</title>
+      <description><![CDATA[<p>A <b>M5.8</b> earthquake hit the coast at <a href="https://bbc.in/x">12:45 local time</a>. Officials say tsunami risk is low at depth 10 km.</p>]]></description>
+      <link>https://www.bbc.co.uk/news/world-66090001</link>
+      <pubDate>Tue, 03 Nov 2026 09:45:00 GMT</pubDate>
+      <dc:creator>BBC World</dc:creator>
+    </item>
+    <item>
+      <title>Floods recede in Pakistan as cleanup begins at 14:30</title>
+      <description><![CDATA[<p>Waters have dropped <b>2 metres</b> after a week of <a href="https://bbc.in/y">heavy rain</a>. The 2026-11-03 monsoon was the worst on record.</p>]]></description>
+      <link>https://www.bbc.co.uk/news/world-66090002</link>
+      <pubDate>Tue, 03 Nov 2026 08:30:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Floods recede in Pakistan as cleanup begins</title>
+      <description>Coastguard &amp; army crews on scene; one official called it the &quot;worst flood in years&quot;.</description>
+      <link>https://www.bbc.co.uk/news/world-66090003</link>
+      <pubDate>Tue, 03 Nov 2026 08:25:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>WHO opens mobile clinic in flood zone</title>
+      <description>Health teams reach 4 villages cut off since the storm &amp; warned of cholera risk.</description>
+      <link>https://www.bbc.co.uk/news/world-66090004</link>
+      <pubDate>Tue, 03 Nov 2026 07:10:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Power restored to 9000 homes after storm Bertha</title>
+      <description><![CDATA[Engineers worked through the night; 3 substations back online by 06:00.]]></description>
+      <link>https://www.bbc.co.uk/news/world-66090005</link>
+      <pubDate>Tue, 03 Nov 2026 05:55:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Diplomats meet on 2026-11-04 ceasefire plan</title>
+      <description>Talks resume at 09:00 with a draft text circulating among 12 nations.</description>
+      <link>https://www.bbc.co.uk/news/world-66090006</link>
+      <pubDate>Mon, 02 Nov 2026 22:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Heatwave grips southern Europe, highs of 42C forecast</title>
+      <description><![CDATA[<p>Spain &amp; Greece issue red alerts. Fire risk &quot;extreme&quot; near Athens through the weekend.</p>]]></description>
+      <link>https://www.bbc.co.uk/news/world-66090007</link>
+      <pubDate>Mon, 02 Nov 2026 18:40:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Aid convoy reaches besieged town after 11-day blockade</title>
+      <description>20 trucks carried food and medical supplies; first delivery since October.</description>
+      <link>https://www.bbc.co.uk/news/world-66090008</link>
+      <pubDate>Mon, 02 Nov 2026 15:20:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
