@@ -1,0 +1,11 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "turn-end-test-and-pagemap",
+      "description": "When the agent finishes a turn, run tests and remind it to keep the README page map in sync with src/pages.",
+      "trigger": "Stop",
+      "action": { "type": "agent", "prompt": "Before finishing: run `npm test`. If any page number was added or removed under src/pages, update the Page map table in README.md (English and Arabic titles) so it matches. Follow .kiro/steering/teletext-rules.md and bilingual.md." }
+    }
+  ]
+}

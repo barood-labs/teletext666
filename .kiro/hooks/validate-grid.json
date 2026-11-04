@@ -1,0 +1,12 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "validate-teletext-grid",
+      "description": "After the agent saves a page or the grid code, re-render every page (EN+AR) and enforce the 40x24 limits.",
+      "trigger": "PostFileSave",
+      "matcher": "src/(pages/.*|grid|format)\\.ts$",
+      "action": { "type": "command", "command": "npm test --silent && node src/cli.ts check" }
+    }
+  ]
+}
